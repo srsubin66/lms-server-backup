@@ -27,12 +27,14 @@ app_include_css = [
 web_include_css = "lms.bundle.css"
 web_include_js = ["website.bundle.js"]
 
+
 website_route_rules = [
     {"from_route": "/lms/<path:app_path>", "to_route": "lms"},
     {
         "from_route": "/courses/<course_name>/<certificate_id>",
         "to_route": "certificate",
     },
+    {"from_route": "/app/lms_leaderboard/<doctype>", "to_route": "lms_leaderboard"},
     {"from_route": "/lms_leaderboard", "to_route": "lms_leaderboard"},
 ]
 
@@ -41,9 +43,12 @@ after_sync = "lms.install.after_sync"
 before_uninstall = "lms.install.before_uninstall"
 setup_wizard_requires = "assets/lms/js/setup_wizard.js"
 
+
 has_permission = {
-    "Page": "lms.lms.page.lms_leaderboard.leaderboard.has_permission"
+    "Page": "lms.lms.page.lms_leaderboard.leaderboard.has_permission",
+    "DocType": "lms.lms.page.lms_leaderboard.leaderboard.has_permission"
 }
+
 
 has_website_permission = {
     "Page": "lms.lms.page.lms_leaderboard.leaderboard.has_website_permission",
@@ -96,12 +101,19 @@ website_redirects = [
         "match_with_query_string": True,
     },
     {"source": "/statistics", "target": "/lms/statistics"},
+    {"source": "/app/lms_leaderboard", "target": "/lms/lms_leaderboard"},
+    {
+        "source": r"/app/lms_leaderboard/(.*)",
+        "target": "/lms/lms_leaderboard",
+        "match_with_query_string": True,
+    },
     {"source": "/lms_leaderboard", "target": "/lms/lms_leaderboard"},
     {
         "source": r"/lms_leaderboard/(.*)",
         "target": "/lms/lms_leaderboard",
         "match_with_query_string": True,
     },
+
 ]
 
 update_website_context = [
