@@ -17,3 +17,12 @@ def get_leaderboard_config():
 		leaderboard_config.update(frappe.get_attr(hook)())
 
 	return leaderboard_config
+
+
+def has_permission():
+	"""Allow all users to access the leaderboard"""
+	return True
+
+def has_website_permission():
+	"""Allow all website users to access the leaderboard"""
+	return True
