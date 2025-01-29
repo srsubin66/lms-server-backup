@@ -1,0 +1,330 @@
+2025-01-25 13:35:36,447 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"back tracking","is_correct":[2,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:36:21,240 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:36:21,794 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:36:22,009 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:38:08,580 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:38:13,016 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:38:13,222 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:38:13,940 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:38:14,162 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': '[{"question_name":"QTS-2025-00001","answer":"class","is_correct":[1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]},{"question_name":"QTS-2025-00002","answer":"single,back tracking","is_correct":[1,1]}]', 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 13:39:05,873 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"name":"m0tdo6bcui","owner":"test@subin.in","creation":"2025-01-25 18:24:07.356202","modified":"2025-01-25 18:24:07.356202","modified_by":"test@subin.in","docstatus":0,"idx":0,"quiz":"cfvgbhn","quiz_title":"cfvgbhn","member":"test@subin.in","member_name":"test","score":20,"score_out_of":20,"percentage":100,"passing_percentage":50,"doctype":"LMS Quiz Submission","result":[],"__last_sync_on":"2025-01-25T13:27:03.721Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-25 13:42:55,153 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"name":"m0tdo6bcui","owner":"test@subin.in","creation":"2025-01-25 18:24:07.356202","modified":"2025-01-25 18:24:07.356202","modified_by":"test@subin.in","docstatus":0,"idx":0,"quiz":"cfvgbhn","quiz_title":"cfvgbhn","member":"test@subin.in","member_name":"test","score":20,"score_out_of":20,"percentage":100,"passing_percentage":50,"doctype":"LMS Quiz Submission","result":[],"__last_sync_on":"2025-01-25T13:42:41.943Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-25 13:43:08,862 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doctype': 'LMS Quiz Submission', 'name': 'm0tdo6bcui', 'cmd': 'frappe.client.delete'}
+2025-01-25 13:43:43,228 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doctype': 'LMS Quiz Submission', 'name': 'imeij7ijm8', 'cmd': 'frappe.client.delete'}
+2025-01-25 13:47:27,854 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doctype': 'LMS Quiz Submission', 'name': 'm0tdo6bcui', 'cmd': 'frappe.client.delete'}
+2025-01-25 13:53:55,028 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': None, 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-25 15:45:27,035 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:31,066 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:34,499 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:34,662 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:34,702 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:35,493 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:35,708 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:35,936 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:42,874 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:43,018 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:43,248 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:48,751 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 15:45:50,171 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 15:45:50,337 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 15:45:50,579 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 15:45:53,859 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:45:54,078 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:46:19,137 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:46:19,279 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:46:19,465 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:46:19,622 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:46:19,752 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:46:19,978 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:48:14,421 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'test@subin.in'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 15:48:27,666 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'test@subin.in'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 15:49:10,709 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'test@subin.in'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 15:49:20,417 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'test@subin.in'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 15:59:39,935 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 15:59:45,942 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 15:59:46,958 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 15:59:47,187 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 16:10:02,776 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'batch': 'CLS-00002', 'cmd': 'lms.lms.utils.enroll_in_batch'}
+2025-01-25 16:38:31,149 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:38:34,842 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:38:34,887 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:38:40,091 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'try', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:39:06,881 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Enrollment","name":"new-lms-enrollment-snugytxtnm","__islocal":1,"__unsaved":1,"owner":"Administrator","member_type":"Student","role":"Member","__run_link_triggers":1,"course":"one","member":"iamtej@thejaswini.me"}', 'cmd': 'frappe.client.save'}
+2025-01-25 16:39:26,273 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:39:29,609 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:39:29,756 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:39:31,512 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:39:38,652 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Enrollment","name":"new-lms-enrollment-snugytxtnm","__islocal":1,"__unsaved":1,"owner":"Administrator","member_type":"Student","role":"Member","__run_link_triggers":false,"course":"one","member":"iamtej@thejaswini.me"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-25 16:40:49,320 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:40:54,832 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:40:55,629 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:40:55,839 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:42:12,612 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:42:42,602 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:42:59,607 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:44:27,093 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:44:28,147 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:44:29,654 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:44:30,717 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:47:40,468 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:47:41,538 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'one', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-25 16:48:02,362 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'test@subin.in'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 16:52:51,273 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Enrollment","name":"new-lms-enrollment-ixsgflzovt","__islocal":1,"__unsaved":1,"owner":"reebariya12@gmail.com","member_type":"Student","role":"Member","__run_link_triggers":1,"course":"one","member":"iamtej@thejaswini.me"}', 'cmd': 'frappe.client.save'}
+2025-01-25 16:59:10,342 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Enrollment","name":"new-lms-enrollment-tojbzugrgk","__islocal":1,"__unsaved":1,"owner":"iamtej@thejaswini.me","member_type":"Student","role":"Member","__run_link_triggers":1,"course":"try","member":"iamtej@thejaswini.me"}', 'cmd': 'frappe.client.save'}
+2025-01-25 17:02:02,833 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 17:03:07,075 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 17:03:11,912 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': {'doctype': 'Batch Student', 'parent': 'CLS-00002', 'parenttype': 'LMS Batch', 'parentfield': 'students', 'student': 'iamtej@thejaswini.me'}, 'cmd': 'frappe.client.insert'}
+2025-01-25 17:25:22,153 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': None, 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-26 11:00:46,737 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"name":"ih810utkof","owner":"davise@karunya.edu.in","creation":"2025-01-26 16:30:41.257562","modified":"2025-01-26 16:30:41.257562","modified_by":"davise@karunya.edu.in","docstatus":0,"idx":0,"user":"annasaji@karunya.edu.in","score":25,"amended_from":null,"doctype":"Leaderboard_trial","__last_sync_on":"2025-01-26T11:00:43.871Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-26 11:18:45,710 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"name":"81e7skdam3","owner":"davise@karunya.edu.in","creation":"2025-01-26 16:48:40.790998","modified":"2025-01-26 16:48:40.790998","modified_by":"davise@karunya.edu.in","docstatus":0,"idx":0,"user":"davise@karunya.edu.in","score":50,"amended_from":null,"doctype":"Leaderboard_trial","__last_sync_on":"2025-01-26T11:18:43.402Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 05:13:44,296 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'quiz': 'cfvgbhn', 'results': None, 'cmd': 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary'}
+2025-01-27 05:45:04,126 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-czxqpujeaj","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":0,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vdgozeavgj","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-czxqpujeaj","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"davise@karunya.edu.in"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-amdvkuflqk","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-czxqpujeaj","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-lvsiyytxul","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-czxqpujeaj","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in","__checked":0},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-uoechtavrf","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-czxqpujeaj","parentfield":"students","parenttype":"LMS Batch","idx":3,"__unedited":false,"student_name":"Reeba","username":"reeba","student":"reebariya12@gmail.com"}],"courses":[],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:11:44","end_time":"11:30:30","timezone":"(GMT+5:30)","seat_count":30,"description":"Try","batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 05:45:46,583 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-czxqpujeaj","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":0,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vdgozeavgj","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-czxqpujeaj","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"davise@karunya.edu.in"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-amdvkuflqk","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-czxqpujeaj","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-lvsiyytxul","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-czxqpujeaj","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in","__checked":0},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-uoechtavrf","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-czxqpujeaj","parentfield":"students","parenttype":"LMS Batch","idx":3,"__unedited":false,"student_name":"Reeba","username":"reeba","student":"reebariya12@gmail.com"}],"courses":[],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:11:44","end_time":"11:30:30","timezone":"(GMT+5:30)","seat_count":30,"description":"Try","batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 05:51:12,282 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 05:56:45,336 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 05:56:50,774 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 05:58:08,974 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:13:00,762 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:15:34,572 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:17:41,608 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:18:20,969 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:21:41,541 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:50:12,459 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:55:36,143 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:56:16,373 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:56:23,972 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:59:14,568 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 06:59:20,660 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LMS Batch","name":"new-lms-batch-xnryuyectb","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","published":1,"allow_self_enrollment":1,"medium":"Online","instructors":[{"docstatus":0,"doctype":"Course Instructor","name":"new-course-instructor-vlphfdlbzd","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"instructors","parenttype":"LMS Batch","idx":1,"instructor":"frappe.subin@gmail.com"}],"students":[{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-luyybzxqcy","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":1,"__unedited":false,"student_name":"test","username":"test","student":"test@subin.in"},{"docstatus":0,"doctype":"Batch Student","name":"new-batch-student-rmgrodjuas","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","confirmation_email_sent":0,"parent":"new-lms-batch-xnryuyectb","parentfield":"students","parenttype":"LMS Batch","idx":2,"__unedited":false,"student_name":"Davis","username":"davis","student":"davise@karunya.edu.in"}],"courses":[{"docstatus":0,"doctype":"Batch Course","name":"new-batch-course-zjfsiuzeuz","__islocal":1,"__unsaved":1,"owner":"davise@karunya.edu.in","parent":"new-lms-batch-xnryuyectb","parentfield":"courses","parenttype":"LMS Batch","idx":1,"__unedited":false,"title":"try","course":"try"}],"assessment":[],"show_live_class":0,"allow_future":1,"timetable":[],"timetable_legends":[],"paid_batch":0,"currency":"INR","title":"Batch A","start_date":"2025-01-27","end_date":"2025-01-31","start_time":"11:15:35","end_time":"12:30:35","timezone":" (GMT+5:30)","seat_count":30,"batch_details":"<div class=\\"ql-editor read-mode\\"><p>Try</p></div>","description":"Try..."}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-27 16:14:34,310 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'lesson': '0004 sdfcgvbhnj', 'course': 'one', 'cmd': 'lms.lms.doctype.course_lesson.course_lesson.save_progress'}
+2025-01-28 15:18:59,914 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:00,997 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:01,680 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:01,849 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:02,091 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:02,181 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:02,559 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:07,165 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new-2', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:07,641 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new-2', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:07,773 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new-2', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:08,010 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new-2', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}
+2025-01-28 15:19:08,197 ERROR frappe New Exception collected in error log
+Site: lms.localhost
+Form Dict: {'course': 'new-2', 'cmd': 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership'}

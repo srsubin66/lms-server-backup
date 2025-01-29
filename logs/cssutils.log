@@ -1,0 +1,126 @@
+2025-01-06 11:37:16,780 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: var(--gray-900) [14:3: color]
+2025-01-06 11:37:16,820 WARNING cssutils Property: Unknown Property name. [64:2: word-wrap]
+2025-01-06 11:37:16,823 WARNING cssutils Property: Unknown Property name. [83:2: columns]
+2025-01-06 11:37:16,824 WARNING cssutils Property: Unknown Property name. [90:2: background-size]
+2025-01-06 11:37:16,826 WARNING cssutils Property: Unknown Property name. [98:2: object-fit]
+2025-01-06 11:37:16,837 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: var(--font-stack) [109:2: font-family]
+2025-01-06 11:37:16,837 WARNING cssutils Property: Unknown Property name. [110:2: -webkit-print-color-adjust]
+2025-01-06 11:37:16,843 WARNING cssutils Property: Unknown Property name. [158:2: word-break]
+2025-01-06 11:37:19,650 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: var(--gray-900) [14:3: color]
+2025-01-06 11:37:19,656 WARNING cssutils Property: Unknown Property name. [64:2: word-wrap]
+2025-01-06 11:37:19,659 WARNING cssutils Property: Unknown Property name. [83:2: columns]
+2025-01-06 11:37:19,664 WARNING cssutils Property: Unknown Property name. [90:2: background-size]
+2025-01-06 11:37:19,665 WARNING cssutils Property: Unknown Property name. [98:2: object-fit]
+2025-01-06 11:37:19,667 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: var(--font-stack) [109:2: font-family]
+2025-01-06 11:37:19,669 WARNING cssutils Property: Unknown Property name. [110:2: -webkit-print-color-adjust]
+2025-01-06 11:37:19,674 WARNING cssutils Property: Unknown Property name. [158:2: word-break]
+2025-01-13 12:39:57,198 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-13 12:39:57,207 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-13 12:39:57,217 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-23 17:48:19,155 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: var(--gray-900) [14:3: color]
+2025-01-23 17:48:19,477 WARNING cssutils Property: Unknown Property name. [64:2: word-wrap]
+2025-01-23 17:48:19,480 WARNING cssutils Property: Unknown Property name. [83:2: columns]
+2025-01-23 17:48:19,481 WARNING cssutils Property: Unknown Property name. [90:2: background-size]
+2025-01-23 17:48:19,483 WARNING cssutils Property: Unknown Property name. [98:2: object-fit]
+2025-01-23 17:48:19,498 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: var(--font-stack) [109:2: font-family]
+2025-01-23 17:48:19,498 WARNING cssutils Property: Unknown Property name. [110:2: -webkit-print-color-adjust]
+2025-01-23 17:48:19,504 WARNING cssutils Property: Unknown Property name. [158:2: word-break]
+2025-01-24 05:38:15,815 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-24 05:38:15,816 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-24 05:38:15,816 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-24 05:39:21,917 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-24 05:39:21,917 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-24 05:39:21,917 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-25 10:16:07,338 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-25 10:16:07,338 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-25 10:16:07,338 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-25 10:16:28,598 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-25 10:16:28,599 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-25 10:16:28,599 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-25 18:36:04,420 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-25 18:36:04,421 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-25 18:36:04,421 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-26 17:01:34,332 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-26 17:01:34,332 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-26 17:01:34,332 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-26 17:01:59,306 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-26 17:01:59,307 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-26 17:01:59,307 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-26 17:02:13,822 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-26 17:02:13,823 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-26 17:02:13,823 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-26 17:02:29,713 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-26 17:02:29,713 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-26 17:02:29,713 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-26 17:02:41,534 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-26 17:02:41,534 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-26 17:02:41,534 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-26 17:03:42,818 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-26 17:03:42,819 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-26 17:03:42,819 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-26 17:04:44,729 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-26 17:04:44,730 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-26 17:04:44,738 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-27 16:55:45,884 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-27 16:55:45,884 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-27 16:55:45,884 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-28 05:55:55,067 ERROR cssutils PropertyValue: Missing token for production Choice(ColorValue, Dimension, URIValue, Value, variable, MSValue, CSSCalc, function): ('HASH', '#0000001a', 1, 3215)
+2025-01-28 05:55:55,085 ERROR cssutils PropertyValue: Unknown syntax or no value: 0 3px 6px #0000001a
+2025-01-28 05:55:55,086 ERROR cssutils CSSStyleDeclaration: Syntax Error in Property: box-shadow:0 3px 6px #0000001a
+2025-01-28 06:02:27,295 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: var(--gray-900) [14:3: color]
+2025-01-28 06:02:27,345 WARNING cssutils Property: Unknown Property name. [64:2: word-wrap]
+2025-01-28 06:02:27,375 WARNING cssutils Property: Unknown Property name. [83:2: columns]
+2025-01-28 06:02:27,397 WARNING cssutils Property: Unknown Property name. [90:2: background-size]
+2025-01-28 06:02:27,406 WARNING cssutils Property: Unknown Property name. [98:2: object-fit]
+2025-01-28 06:02:27,417 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: var(--font-stack) [109:2: font-family]
+2025-01-28 06:02:27,417 WARNING cssutils Property: Unknown Property name. [110:2: -webkit-print-color-adjust]
+2025-01-28 06:02:27,477 WARNING cssutils Property: Unknown Property name. [158:2: word-break]
+2025-01-28 06:02:27,728 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: "Inter" sans-serif [279:5: font-family]
+2025-01-28 06:02:27,728 ERROR cssutils Property: Invalid value for "CSS Backgrounds and Borders Module Level 3" property: 0.5rem [281:5: border-radius]
+2025-01-28 06:02:27,729 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 1rem [283:5: padding]
+2025-01-28 06:02:27,747 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 6rem 4rem [290:5: padding]
+2025-01-28 06:02:27,748 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 1.5rem [295:5: height]
+2025-01-28 06:02:27,749 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 4rem [296:5: margin-bottom]
+2025-01-28 06:02:27,749 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 2rem [300:5: font-size]
+2025-01-28 06:02:27,764 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 0.5rem [303:5: margin-bottom]
+2025-01-28 06:02:27,765 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 4rem auto 0 [307:5: margin]
+2025-01-28 06:02:27,775 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 0.5rem 0 [322:5: margin]
+2025-01-28 06:02:27,794 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 2rem [326:5: margin-left]
+2025-01-28 06:03:14,813 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: var(--gray-900) [14:3: color]
+2025-01-28 06:03:14,834 WARNING cssutils Property: Unknown Property name. [64:2: word-wrap]
+2025-01-28 06:03:14,852 WARNING cssutils Property: Unknown Property name. [83:2: columns]
+2025-01-28 06:03:14,854 WARNING cssutils Property: Unknown Property name. [90:2: background-size]
+2025-01-28 06:03:14,863 WARNING cssutils Property: Unknown Property name. [98:2: object-fit]
+2025-01-28 06:03:14,872 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: var(--font-stack) [109:2: font-family]
+2025-01-28 06:03:14,872 WARNING cssutils Property: Unknown Property name. [110:2: -webkit-print-color-adjust]
+2025-01-28 06:03:14,904 WARNING cssutils Property: Unknown Property name. [158:2: word-break]
+2025-01-28 06:03:14,984 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: "Inter" sans-serif [279:5: font-family]
+2025-01-28 06:03:14,993 ERROR cssutils Property: Invalid value for "CSS Backgrounds and Borders Module Level 3" property: 0.5rem [281:5: border-radius]
+2025-01-28 06:03:14,994 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 1rem [283:5: padding]
+2025-01-28 06:03:15,003 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 6rem 4rem [290:5: padding]
+2025-01-28 06:03:15,004 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 1.5rem [295:5: height]
+2025-01-28 06:03:15,004 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 4rem [296:5: margin-bottom]
+2025-01-28 06:03:15,005 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 2rem [300:5: font-size]
+2025-01-28 06:03:15,013 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 0.5rem [303:5: margin-bottom]
+2025-01-28 06:03:15,014 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 4rem auto 0 [307:5: margin]
+2025-01-28 06:03:15,024 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 0.5rem 0 [322:5: margin]
+2025-01-28 06:03:15,025 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 2rem [326:5: margin-left]
+2025-01-28 06:53:55,758 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: var(--gray-900) [14:3: color]
+2025-01-28 06:53:55,779 WARNING cssutils Property: Unknown Property name. [64:2: word-wrap]
+2025-01-28 06:53:55,795 WARNING cssutils Property: Unknown Property name. [83:2: columns]
+2025-01-28 06:53:55,799 WARNING cssutils Property: Unknown Property name. [90:2: background-size]
+2025-01-28 06:53:55,800 WARNING cssutils Property: Unknown Property name. [98:2: object-fit]
+2025-01-28 06:53:55,829 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: var(--font-stack) [109:2: font-family]
+2025-01-28 06:53:55,829 WARNING cssutils Property: Unknown Property name. [110:2: -webkit-print-color-adjust]
+2025-01-28 06:53:55,859 WARNING cssutils Property: Unknown Property name. [158:2: word-break]
+2025-01-28 06:53:55,931 ERROR cssutils Property: Invalid value for "CSS Fonts Module Level 3 @font-face properties/CSS Level 2.1" property: "Inter" sans-serif [279:5: font-family]
+2025-01-28 06:53:55,939 ERROR cssutils Property: Invalid value for "CSS Backgrounds and Borders Module Level 3" property: 0.5rem [281:5: border-radius]
+2025-01-28 06:53:55,940 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 1rem [283:5: padding]
+2025-01-28 06:53:55,949 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 6rem 4rem [290:5: padding]
+2025-01-28 06:53:55,950 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 1.5rem [295:5: height]
+2025-01-28 06:53:55,950 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 4rem [296:5: margin-bottom]
+2025-01-28 06:53:55,951 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 2rem [300:5: font-size]
+2025-01-28 06:53:55,960 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 0.5rem [303:5: margin-bottom]
+2025-01-28 06:53:55,960 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 4rem auto 0 [307:5: margin]
+2025-01-28 06:53:55,970 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 0.5rem 0 [322:5: margin]
+2025-01-28 06:53:55,971 ERROR cssutils Property: Invalid value for "CSS Level 2.1" property: 2rem [326:5: margin-left]

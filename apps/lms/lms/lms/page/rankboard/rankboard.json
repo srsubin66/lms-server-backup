@@ -1,0 +1,22 @@
+{
+ "content": null,
+ "creation": "2025-01-24 10:54:33.347833",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-01-24 10:54:33.347833",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "rankboard",
+ "owner": "Administrator",
+ "page_name": "rankboard",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

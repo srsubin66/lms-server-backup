@@ -1,0 +1,35 @@
+{
+ "content": null,
+ "creation": "2025-01-28 21:46:18.612582",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 2,
+ "modified": "2025-01-28 23:13:17.523859",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "lms_leaderboard",
+ "owner": "Administrator",
+ "page_name": "lms_leaderboard",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "LMS Student"
+  },
+  {
+   "role": "All"
+  },
+  {
+   "role": "Guest"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "LMS Leaderboard"
+}

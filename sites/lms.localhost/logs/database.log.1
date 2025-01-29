@@ -1,0 +1,1097 @@
+2025-01-06 06:03:10,287 WARNING database DDL Query made to DB:
+create table `tabLMS Sidebar Item` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`web_page` varchar(140),
+`title` varchar(140),
+`icon` varchar(140),
+`route` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:10,397 WARNING database DDL Query made to DB:
+create table `tabLMS Payment` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`payment_for_document_type` varchar(140),
+`member` varchar(140),
+`source` varchar(140),
+`payment_for_document` varchar(140),
+`billing_name` varchar(140),
+`payment_received` tinyint NOT NULL DEFAULT 0,
+`currency` varchar(140),
+`amount` decimal(21,9) NOT NULL DEFAULT 0.0,
+`amount_with_gst` decimal(21,9) NOT NULL DEFAULT 0.0,
+`order_id` varchar(140),
+`payment_id` varchar(140),
+`address` varchar(140),
+`gstin` varchar(140),
+`pan` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:10,467 WARNING database DDL Query made to DB:
+create sequence if not exists evaluator_schedule_id_seq nocache nocycle
+2025-01-06 06:03:10,495 WARNING database DDL Query made to DB:
+create table `tabEvaluator Schedule` (
+			name bigint primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`day` varchar(140),
+`start_time` time(6),
+`end_time` time(6),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:10,583 WARNING database DDL Query made to DB:
+create table `tabLMS Timetable Template` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`title` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:10,720 WARNING database DDL Query made to DB:
+create table `tabExercise Submission` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`exercise` varchar(140),
+`status` varchar(140),
+`batch_old` varchar(140),
+`exercise_title` varchar(140),
+`course` varchar(140),
+`lesson` varchar(140),
+`solution` longtext,
+`image` longtext,
+`test_results` text,
+`comments` text,
+`member` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:10,805 WARNING database DDL Query made to DB:
+create table `tabLMS Program Member` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`member` varchar(140),
+`full_name` varchar(140),
+`progress` int NOT NULL DEFAULT 0,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:10,921 WARNING database DDL Query made to DB:
+create table `tabCourse Lesson` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`title` varchar(140),
+`include_in_preview` tinyint NOT NULL DEFAULT 0,
+`chapter` varchar(140),
+`is_scorm_package` tinyint NOT NULL DEFAULT 0,
+`course` varchar(140),
+`content` text,
+`body` longtext,
+`instructor_content` text,
+`instructor_notes` longtext,
+`youtube` varchar(140),
+`quiz_id` varchar(140),
+`question` text,
+`file_type` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,045 WARNING database DDL Query made to DB:
+create table `tabLMS Quiz` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`title` varchar(140) UNIQUE,
+`max_attempts` int NOT NULL DEFAULT 0,
+`show_answers` tinyint NOT NULL DEFAULT 1,
+`show_submission_history` tinyint NOT NULL DEFAULT 0,
+`total_marks` int NOT NULL DEFAULT 0,
+`passing_percentage` int NOT NULL DEFAULT 0,
+`duration` varchar(140),
+`shuffle_questions` tinyint NOT NULL DEFAULT 0,
+`limit_questions_to` int NOT NULL DEFAULT 0,
+`lesson` varchar(140),
+`course` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,237 WARNING database DDL Query made to DB:
+create table `tabExercise Latest Submission` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`exercise` varchar(140),
+`status` varchar(140),
+`batch_old` varchar(140),
+`exercise_title` varchar(140),
+`course` varchar(140),
+`lesson` varchar(140),
+`solution` longtext,
+`image` longtext,
+`test_results` text,
+`comments` text,
+`latest_submission` varchar(140),
+`member` varchar(140),
+`member_email` varchar(140),
+`member_cohort` varchar(140),
+`member_subgroup` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index `exercise`(`exercise`),
+index `member_email`(`member_email`),
+index `member_cohort`(`member_cohort`),
+index `member_subgroup`(`member_subgroup`),
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,308 WARNING database DDL Query made to DB:
+create table `tabLesson Reference` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`lesson` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,402 WARNING database DDL Query made to DB:
+create table `tabLMS Badge Assignment` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`member` varchar(140),
+`issued_on` date,
+`badge` varchar(140),
+`badge_image` text,
+`badge_description` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,497 WARNING database DDL Query made to DB:
+create table `tabLMS Assignment` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`title` varchar(140),
+`question` longtext,
+`type` varchar(140),
+`grade_assignment` tinyint NOT NULL DEFAULT 1,
+`show_answer` tinyint NOT NULL DEFAULT 0,
+`answer` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,581 WARNING database DDL Query made to DB:
+create table `tabLMS Assessment` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`assessment_type` varchar(140),
+`assessment_name` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,723 WARNING database DDL Query made to DB:
+create table `tabLMS Batch` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`published` tinyint NOT NULL DEFAULT 0,
+`title` varchar(140),
+`start_date` date,
+`end_date` date,
+`allow_self_enrollment` tinyint NOT NULL DEFAULT 0,
+`start_time` time(6),
+`end_time` time(6),
+`timezone` varchar(140),
+`medium` varchar(140) DEFAULT 'Online',
+`category` varchar(140),
+`seat_count` int NOT NULL DEFAULT 0,
+`evaluation_end_date` date,
+`description` text,
+`meta_image` text,
+`batch_details` longtext,
+`batch_details_raw` longtext,
+`timetable_template` varchar(140),
+`show_live_class` tinyint NOT NULL DEFAULT 0,
+`allow_future` tinyint NOT NULL DEFAULT 1,
+`paid_batch` tinyint NOT NULL DEFAULT 0,
+`amount` decimal(21,9) NOT NULL DEFAULT 0.0,
+`currency` varchar(140),
+`amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0,
+`custom_component` longtext,
+`custom_script` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,819 WARNING database DDL Query made to DB:
+create sequence if not exists batch_course_id_seq nocache nocycle
+2025-01-06 06:03:11,857 WARNING database DDL Query made to DB:
+create table `tabBatch Course` (
+			name bigint primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`course` varchar(140),
+`title` varchar(140),
+`evaluator` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:11,981 WARNING database DDL Query made to DB:
+create table `tabLMS Certificate Evaluation` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`member` varchar(140),
+`member_name` varchar(140),
+`course` varchar(140),
+`batch_name` varchar(140),
+`evaluator` varchar(140),
+`evaluator_name` varchar(140),
+`date` date,
+`start_time` time(6),
+`end_time` time(6),
+`rating` decimal(3,2),
+`status` varchar(140),
+`summary` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,069 WARNING database DDL Query made to DB:
+create table `tabCohort Subgroup` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`cohort` varchar(140),
+`slug` varchar(140),
+`title` varchar(140),
+`invite_code` varchar(140),
+`course` varchar(140),
+`description` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,175 WARNING database DDL Query made to DB:
+create table `tabLMS Exercise` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`title` varchar(140),
+`description` text,
+`code` longtext,
+`answer` longtext,
+`course` varchar(140),
+`hints` text,
+`tests` longtext,
+`image` longtext,
+`lesson` varchar(140),
+`index_` int NOT NULL DEFAULT 0,
+`index_label` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,279 WARNING database DDL Query made to DB:
+create table `tabInvite Request` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`invite_email` varchar(140) UNIQUE,
+`signup_email` varchar(140),
+`status` varchar(140) DEFAULT 'Pending',
+`full_name` varchar(140),
+`username` varchar(140),
+`invite_code` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,357 WARNING database DDL Query made to DB:
+create table `tabCertification` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`certification_name` varchar(140),
+`organization` varchar(140),
+`description` text,
+`expire` tinyint NOT NULL DEFAULT 0,
+`issue_date` date,
+`expiration_date` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,448 WARNING database DDL Query made to DB:
+create table `tabLMS Course Progress` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`member` varchar(140),
+`member_name` varchar(140),
+`status` varchar(140),
+`lesson` varchar(140),
+`chapter` varchar(140),
+`course` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,524 WARNING database DDL Query made to DB:
+create table `tabRelated Courses` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`course` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,615 WARNING database DDL Query made to DB:
+create table `tabLMS Source` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`source` varchar(140) UNIQUE,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,701 WARNING database DDL Query made to DB:
+create table `tabCourse Instructor` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`instructor` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,784 WARNING database DDL Query made to DB:
+create table `tabPreferred Function` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`function` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,869 WARNING database DDL Query made to DB:
+create table `tabEducation Detail` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`institution_name` varchar(140),
+`location` varchar(140),
+`degree_type` varchar(140),
+`major` varchar(140),
+`grade_type` varchar(140),
+`grade` varchar(140),
+`start_date` date,
+`end_date` date,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:12,980 WARNING database DDL Query made to DB:
+create table `tabCohort` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`course` varchar(140),
+`title` varchar(140),
+`slug` varchar(140) UNIQUE,
+`instructor` varchar(140),
+`status` varchar(140),
+`begin_date` date,
+`end_date` date,
+`duration` varchar(140),
+`description` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,143 WARNING database DDL Query made to DB:
+create table `tabLMS Program Course` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`course` varchar(140),
+`course_title` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,272 WARNING database DDL Query made to DB:
+create table `tabLMS Certificate Request` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`course` varchar(140),
+`course_title` varchar(140),
+`member` varchar(140),
+`member_name` varchar(140),
+`evaluator` varchar(140),
+`evaluator_name` varchar(140),
+`batch_name` varchar(140),
+`batch_title` varchar(140),
+`timezone` varchar(140),
+`date` date,
+`day` varchar(140),
+`google_meet_link` varchar(140),
+`start_time` time(6),
+`end_time` time(6),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,366 WARNING database DDL Query made to DB:
+create table `tabLMS Course Mentor Mapping` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`course` varchar(140),
+`mentor` varchar(140),
+`mentor_name` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,441 WARNING database DDL Query made to DB:
+create table `tabSkills` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`skill_name` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,521 WARNING database DDL Query made to DB:
+create table `tabLMS Program` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`title` varchar(140) UNIQUE,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,619 WARNING database DDL Query made to DB:
+create table `tabLMS Category` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`category` varchar(140) UNIQUE,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,709 WARNING database DDL Query made to DB:
+create table `tabLMS Course Review` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`rating` decimal(3,2),
+`course` varchar(140),
+`review` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,804 WARNING database DDL Query made to DB:
+create table `tabPayment Country` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`country` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,879 WARNING database DDL Query made to DB:
+create table `tabChapter Reference` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`chapter` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:13,981 WARNING database DDL Query made to DB:
+create table `tabLMS Quiz Result` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`question` text,
+`question_name` varchar(140),
+`answer` text,
+`marks` int NOT NULL DEFAULT 0,
+`marks_out_of` int NOT NULL DEFAULT 0,
+`is_correct` tinyint NOT NULL DEFAULT 0,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:14,387 WARNING database DDL Query made to DB:
+create table `tabJob Opportunity` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`job_title` varchar(140),
+`location` varchar(140),
+`disabled` tinyint NOT NULL DEFAULT 0,
+`type` varchar(140) DEFAULT 'Full Time',
+`status` varchar(140) DEFAULT 'Open',
+`description` longtext,
+`company_name` varchar(140),
+`company_website` varchar(140),
+`company_logo` text,
+`company_email_address` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:14,531 WARNING database DDL Query made to DB:
+create table `tabLMS Job Application` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`user` varchar(140),
+`resume` text,
+`job` varchar(140),
+`job_title` varchar(140),
+`company` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation),
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-06 06:03:16,186 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `country` varchar(140)
+2025-01-06 06:03:16,218 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:16,361 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `verify_terms` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:16,390 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:16,527 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `user_category` varchar(140)
+2025-01-06 06:03:16,561 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2
+2025-01-06 06:03:16,703 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `cover_image` text
+2025-01-06 06:03:16,737 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:16,883 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `looking_for_job` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:16,916 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:17,058 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `linkedin` varchar(140)
+2025-01-06 06:03:17,082 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:17,224 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `github` varchar(140)
+2025-01-06 06:03:17,251 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:17,389 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `medium` varchar(140)
+2025-01-06 06:03:17,429 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:17,584 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `profession` varchar(140)
+2025-01-06 06:03:17,615 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:17,761 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `hide_private` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:17,786 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:17,920 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:18,059 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:18,205 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:18,345 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:18,485 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0
+2025-01-06 06:03:18,637 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:18,780 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:18,885 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `condition_json` json, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:19,059 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:19,207 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0
+2025-01-06 06:03:19,322 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` ADD COLUMN `payment_gateway` varchar(140)
+2025-01-06 06:03:19,350 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:19,462 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` ADD COLUMN `payment_button_label` varchar(140) DEFAULT 'Buy Now'
+2025-01-06 06:03:19,487 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:19,594 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:19,709 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` ADD COLUMN `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-06 06:03:19,741 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:19,879 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:19,996 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` ADD COLUMN `payment_button_help` text
+2025-01-06 06:03:20,022 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:20,138 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` ADD COLUMN `amount_based_on_field` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:20,172 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0
+2025-01-06 06:03:20,288 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` ADD COLUMN `amount_field` varchar(140)
+2025-01-06 06:03:20,315 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `amount_based_on_field` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:20,472 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `notifications` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:20,611 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `preferred_location` varchar(140)
+2025-01-06 06:03:20,649 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:20,780 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` ADD COLUMN `currency` varchar(140)
+2025-01-06 06:03:20,808 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `amount_based_on_field` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `hide_footer` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `hide_navbar` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `anonymous` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:20,983 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:21,148 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:21,302 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `dream_companies` varchar(140)
+2025-01-06 06:03:21,334 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:21,475 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:21,626 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `attire` varchar(140)
+2025-01-06 06:03:21,651 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:21,800 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `collaboration` varchar(140)
+2025-01-06 06:03:21,828 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:21,974 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `role` varchar(140)
+2025-01-06 06:03:21,999 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:22,165 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:22,331 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `location_preference` varchar(140)
+2025-01-06 06:03:22,355 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:22,518 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `time` varchar(140)
+2025-01-06 06:03:22,547 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:22,708 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `company_type` varchar(140)
+2025-01-06 06:03:22,737 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:22,892 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `headline` varchar(140)
+2025-01-06 06:03:22,919 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0
+2025-01-06 06:03:23,072 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `city` varchar(140)
+2025-01-06 06:03:23,102 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:23,272 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `college` varchar(140)
+2025-01-06 06:03:23,310 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1
+2025-01-06 06:03:23,461 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `branch` varchar(140)
+2025-01-06 06:03:23,494 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `list_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `bulk_actions` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `view_switcher` tinyint NOT NULL DEFAULT 1, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1, MODIFY `search_bar` tinyint NOT NULL DEFAULT 1, MODIFY `form_sidebar` tinyint NOT NULL DEFAULT 1, MODIFY `hide_private` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `looking_for_job` tinyint NOT NULL DEFAULT 0, MODIFY `notifications` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `verify_terms` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `timeline` tinyint NOT NULL DEFAULT 1, MODIFY `dashboard` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0

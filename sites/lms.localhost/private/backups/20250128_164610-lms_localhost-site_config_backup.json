@@ -1,0 +1,10 @@
+{
+ "db_name": "_d3ba19595fc17af1",
+ "db_password": "ADvtE7MrTP0yyTzk",
+ "db_type": "mariadb",
+ "db_user": "_d3ba19595fc17af1",
+ "developer_mode": 1,
+ "encryption_key": "BX1eZUn9l-T4YjHvYbNLAOC-EM0X2_jK_10nsUL5Q0g=",
+ "pause_scheduler": false,
+ "server_script_enabled": true
+}

@@ -1,0 +1,196 @@
+2025-01-13 13:09:12,410 WARNING database DDL Query made to DB:
+create table `tabattendance_tracking` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`amended_from` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index `amended_from`(`amended_from`),
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-17 11:26:21,494 WARNING database DDL Query made to DB:
+create table `tabAchievement_Trail` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`amended_from` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index `amended_from`(`amended_from`),
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-17 11:28:32,122 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `studentname` varchar(140)
+2025-01-17 11:28:32,303 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD INDEX `studentname_index`(`studentname`)
+2025-01-17 11:42:14,901 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `student_name` varchar(140)
+2025-01-17 11:43:25,574 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `achievement_title` varchar(140)
+2025-01-17 11:44:08,960 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `achievement_date` date
+2025-01-17 11:45:15,248 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `course` varchar(140)
+2025-01-17 11:46:15,280 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `achievement_type` varchar(140)
+2025-01-17 11:47:27,354 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `category` varchar(140)
+2025-01-17 11:48:22,839 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `achievement_details` longtext
+2025-01-17 11:49:33,153 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `document_link` text
+2025-01-17 11:50:47,549 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `status` varchar(140)
+2025-01-17 11:52:06,222 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `verified_by` varchar(140)
+2025-01-17 11:52:37,433 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `points` int NOT NULL DEFAULT 0
+2025-01-17 11:54:26,288 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `total_points` int NOT NULL DEFAULT 0
+2025-01-17 11:54:26,398 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `points` int NOT NULL DEFAULT 0
+2025-01-17 11:54:26,578 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD INDEX `total_points_index`(`total_points`)
+2025-01-17 11:56:29,538 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `total_points` int NOT NULL DEFAULT 0, MODIFY `points` int NOT NULL DEFAULT 0
+2025-01-17 11:57:27,502 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` ADD COLUMN `rank` int NOT NULL DEFAULT 0
+2025-01-17 11:57:27,633 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `points` int NOT NULL DEFAULT 0, MODIFY `total_points` int NOT NULL DEFAULT 0
+2025-01-17 11:58:25,174 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `points` int NOT NULL DEFAULT 0, MODIFY `rank` int NOT NULL DEFAULT 0, MODIFY `total_points` int NOT NULL DEFAULT 0
+2025-01-17 13:04:00,173 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `total_points` int NOT NULL DEFAULT 0, MODIFY `points` int NOT NULL DEFAULT 0, MODIFY `rank` int NOT NULL DEFAULT 0
+2025-01-17 13:05:04,580 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `points` int NOT NULL DEFAULT 0, MODIFY `total_points` int NOT NULL DEFAULT 0, MODIFY `rank` int NOT NULL DEFAULT 0
+2025-01-21 13:24:04,314 WARNING database DDL Query made to DB:
+create table `tabLeaderboard_trial` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`amended_from` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index `amended_from`(`amended_from`),
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-01-21 13:28:36,144 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` ADD COLUMN `username1` varchar(140), ADD COLUMN `totalpoints` int NOT NULL DEFAULT 0, ADD COLUMN `rank` int NOT NULL DEFAULT 0, ADD COLUMN `lastupdated` datetime(6)
+2025-01-21 14:28:20,060 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `rank` int NOT NULL DEFAULT 0, MODIFY `totalpoints` int NOT NULL DEFAULT 0
+2025-01-21 15:24:53,183 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `totalpoints` int NOT NULL DEFAULT 0, MODIFY `rank` int NOT NULL DEFAULT 0
+2025-01-21 15:32:08,993 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `rank` int NOT NULL DEFAULT 0, MODIFY `totalpoints` int NOT NULL DEFAULT 0
+2025-01-22 11:23:31,497 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `totalpoints` int NOT NULL DEFAULT 0, MODIFY `rank` int NOT NULL DEFAULT 0
+2025-01-24 04:18:38,279 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course Progress` ADD COLUMN `duration` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-24 04:23:59,853 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course Progress` ADD COLUMN `date` datetime(6)
+2025-01-24 04:23:59,882 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course Progress` MODIFY `duration` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-24 04:31:47,680 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `rank` int NOT NULL DEFAULT 0, MODIFY `totalpoints` int NOT NULL DEFAULT 0
+2025-01-24 04:49:36,925 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `points` int NOT NULL DEFAULT 0, MODIFY `rank` int NOT NULL DEFAULT 0, MODIFY `total_points` int NOT NULL DEFAULT 0
+2025-01-24 05:03:47,556 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `totalpoints` int NOT NULL DEFAULT 0
+2025-01-24 05:04:32,543 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `totalpoints` int NOT NULL DEFAULT 0
+2025-01-24 05:05:48,321 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `totalpoints` int NOT NULL DEFAULT 0, MODIFY `rank` int NOT NULL DEFAULT 0
+2025-01-24 05:31:00,573 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAchievement_Trail` MODIFY `rank` int NOT NULL DEFAULT 0, MODIFY `total_points` int NOT NULL DEFAULT 0, MODIFY `points` int NOT NULL DEFAULT 0
+2025-01-24 05:36:59,812 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` ADD COLUMN `user` varchar(140), ADD COLUMN `score` int NOT NULL DEFAULT 0
+2025-01-24 09:13:14,759 WARNING database DDL Query made to DB:
+alter table `tabLMS Program Member` add column if not exists parent varchar(140)
+2025-01-24 09:13:14,759 WARNING database DDL Query made to DB:
+alter table `tabLMS Program Member` add column if not exists parenttype varchar(140)
+2025-01-24 09:13:14,760 WARNING database DDL Query made to DB:
+alter table `tabLMS Program Member` add column if not exists parentfield varchar(140)
+2025-01-24 09:13:14,869 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Program Member` MODIFY `progress` int NOT NULL DEFAULT 0
+2025-01-24 09:13:48,751 WARNING database DDL Query made to DB:
+alter table `tabLMS Program Member` add column if not exists parent varchar(140)
+2025-01-24 09:13:48,751 WARNING database DDL Query made to DB:
+alter table `tabLMS Program Member` add column if not exists parenttype varchar(140)
+2025-01-24 09:13:48,752 WARNING database DDL Query made to DB:
+alter table `tabLMS Program Member` add column if not exists parentfield varchar(140)
+2025-01-24 09:13:48,852 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Program Member` MODIFY `progress` int NOT NULL DEFAULT 0
+2025-01-25 13:44:24,906 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course Progress` MODIFY `duration` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-25 13:45:14,663 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course Progress` MODIFY `duration` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-25 15:38:26,778 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course Progress` MODIFY `duration` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-27 16:03:53,229 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` ADD COLUMN `progress` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-27 16:03:53,370 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` MODIFY `is_scorm_package` tinyint NOT NULL DEFAULT 0
+2025-01-27 16:04:14,210 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` MODIFY `is_scorm_package` tinyint NOT NULL DEFAULT 0, MODIFY `progress` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-27 16:04:14,452 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` ADD INDEX `progress_index`(`progress`)
+2025-01-27 16:04:29,857 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` MODIFY `is_scorm_package` tinyint NOT NULL DEFAULT 0, MODIFY `progress` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-27 16:04:30,059 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` DROP INDEX `progress_index`
+2025-01-27 16:09:08,412 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` MODIFY `is_scorm_package` tinyint NOT NULL DEFAULT 0
+2025-01-27 16:11:57,331 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCourse Chapter` MODIFY `is_scorm_package` tinyint NOT NULL DEFAULT 0, MODIFY `progress` tinyint NOT NULL DEFAULT 0
+2025-01-27 16:37:02,559 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPage` ADD COLUMN `route` varchar(140)
+2025-01-27 16:37:02,690 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPage` MODIFY `system_page` tinyint NOT NULL DEFAULT 0
+2025-01-27 16:45:35,841 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course` MODIFY `disable_self_learning` tinyint NOT NULL DEFAULT 0, MODIFY `paid_course` tinyint NOT NULL DEFAULT 0, MODIFY `enable_certification` tinyint NOT NULL DEFAULT 0, MODIFY `upcoming` tinyint NOT NULL DEFAULT 0, MODIFY `expiry` int NOT NULL DEFAULT 0, MODIFY `course_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `featured` tinyint NOT NULL DEFAULT 0
+2025-01-27 16:45:35,841 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course` MODIFY `disable_self_learning` tinyint NOT NULL DEFAULT 0, MODIFY `paid_course` tinyint NOT NULL DEFAULT 0, MODIFY `enable_certification` tinyint NOT NULL DEFAULT 0, MODIFY `upcoming` tinyint NOT NULL DEFAULT 0, MODIFY `expiry` int NOT NULL DEFAULT 0, MODIFY `course_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `featured` tinyint NOT NULL DEFAULT 0
+2025-01-27 16:46:11,181 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course` MODIFY `featured` tinyint NOT NULL DEFAULT 0, MODIFY `disable_self_learning` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `enable_certification` tinyint NOT NULL DEFAULT 0, MODIFY `amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `upcoming` tinyint NOT NULL DEFAULT 0, MODIFY `paid_course` tinyint NOT NULL DEFAULT 0, MODIFY `expiry` int NOT NULL DEFAULT 0, MODIFY `course_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-27 16:46:11,181 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course` MODIFY `featured` tinyint NOT NULL DEFAULT 0, MODIFY `disable_self_learning` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `enable_certification` tinyint NOT NULL DEFAULT 0, MODIFY `amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `upcoming` tinyint NOT NULL DEFAULT 0, MODIFY `paid_course` tinyint NOT NULL DEFAULT 0, MODIFY `expiry` int NOT NULL DEFAULT 0, MODIFY `course_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-28 06:24:16,938 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course` MODIFY `enable_certification` tinyint NOT NULL DEFAULT 0, MODIFY `status` varchar(140) DEFAULT 'Incomplete', MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `featured` tinyint NOT NULL DEFAULT 0, MODIFY `upcoming` tinyint NOT NULL DEFAULT 0, MODIFY `amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `expiry` int NOT NULL DEFAULT 0, MODIFY `paid_course` tinyint NOT NULL DEFAULT 0, MODIFY `course_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `disable_self_learning` tinyint NOT NULL DEFAULT 0
+2025-01-28 07:03:59,779 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course Progress` MODIFY `status` varchar(140) DEFAULT 'Incomplete', MODIFY `duration` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-01-29 12:07:46,101 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course` MODIFY `upcoming` tinyint NOT NULL DEFAULT 0, MODIFY `paid_course` tinyint NOT NULL DEFAULT 0, MODIFY `enable_certification` tinyint NOT NULL DEFAULT 0, MODIFY `expiry` int NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `featured` tinyint NOT NULL DEFAULT 0, MODIFY `amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `course_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `disable_self_learning` tinyint NOT NULL DEFAULT 0
+2025-01-29 12:08:42,345 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLMS Course` MODIFY `disable_self_learning` tinyint NOT NULL DEFAULT 0, MODIFY `featured` tinyint NOT NULL DEFAULT 0, MODIFY `enable_certification` tinyint NOT NULL DEFAULT 0, MODIFY `amount_usd` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `course_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `expiry` int NOT NULL DEFAULT 0, MODIFY `upcoming` tinyint NOT NULL DEFAULT 0, MODIFY `paid_course` tinyint NOT NULL DEFAULT 0
+2025-01-29 13:01:30,347 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `score` int NOT NULL DEFAULT 0
+2025-01-29 13:02:14,389 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeaderboard_trial` MODIFY `score` int NOT NULL DEFAULT 0
