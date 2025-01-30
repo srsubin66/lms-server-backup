@@ -69,6 +69,11 @@ class LMSEnrollment(Document):
 			courses = frappe.get_all(
 				"LMS Program Course", {"parent": program.parent}, pluck="course"
 			)
+			
+			# Skip if no courses in program
+			if not courses:
+				continue
+				
 			for course in courses:
 				progress = frappe.db.get_value(
 					"LMS Enrollment", {"course": course, "member": self.member}, "progress"
