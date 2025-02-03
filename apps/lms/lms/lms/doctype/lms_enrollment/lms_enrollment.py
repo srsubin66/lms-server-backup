@@ -65,23 +65,34 @@ class LMSEnrollment(Document):
 		)
 
 		for program in programs:
-			total_progress = 0
 			courses = frappe.get_all(
 				"LMS Program Course", {"parent": program.parent}, pluck="course"
 			)
 			
-			# Skip if no courses in program
+			# Set default progress to 0 if no courses
 			if not courses:
+				frappe.db.set_value("LMS Program Member", program.name, "progress", 0)
 				continue
 				
+			total_progress = 0
+			valid_courses = 0  # Counter for courses with valid progress
+			
 			for course in courses:
 				progress = frappe.db.get_value(
-					"LMS Enrollment", {"course": course, "member": self.member}, "progress"
+					"LMS Enrollment", 
+					{"course": course, "member": self.member}, 
+					"progress"
 				)
-				progress = progress or 0
-				total_progress += progress
-
-			average_progress = ceil(total_progress / len(courses))
+				if progress is not None:  # Only count courses that have progress
+					total_progress += progress
+					valid_courses += 1
+			
+			# Calculate average only if there are courses with progress
+			if valid_courses > 0:
+				average_progress = ceil(total_progress / valid_courses)
+			else:
+				average_progress = 0
+				
 			frappe.db.set_value("LMS Program Member", program.name, "progress", average_progress)
 
 
