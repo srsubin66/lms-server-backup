@@ -3,21 +3,12 @@
 import frappe
 
 def has_permission(doc, ptype, user):
-    # Allow access to everyone who is logged in
-    if frappe.session.user == 'Guest':
-        return False
-        
-    # Check if user is either a system user or has an LMS enrollment
-    return (frappe.session.user == 'Administrator' 
-            or frappe.db.exists('User', {'name': frappe.session.user, 'user_type': 'System User'})
-            or frappe.db.exists('LMS Enrollment', {'user': frappe.session.user}))
+    # Allow access to everyone, including guests
+    return True
 
 def has_website_permission(doc, ptype, user):
-    # Allow access to logged-in users with LMS enrollment
-    if frappe.session.user == 'Guest':
-        return False
-    
-    return frappe.db.exists('LMS Enrollment', {'user': frappe.session.user})
+    # Allow access to everyone, including guests
+    return True
 
 @frappe.whitelist()
 def get_leaderboard_config():
