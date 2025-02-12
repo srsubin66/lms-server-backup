@@ -1,4 +1,5 @@
 from . import __version__ as app_version
+from frappe import _
 
 app_name = "frappe_lms"
 app_title = "Frappe LMS"
@@ -279,4 +280,24 @@ app_include_sidebar_items = [
 			}
 		]
 	}
+]
+
+# Add these configurations
+workspace_sidebar_items = {
+    "Learning": [
+        {
+            "label": _("Learning"),
+            "items": [
+                {"type": "doctype", "name": "Course", "label": _("Courses")},
+                {"type": "page", "name": "lms_leaderboard", "label": _("Leaderboard")},
+                {"type": "page", "name": "statistics", "label": _("Statistics")}
+            ]
+        }
+    ]
+}
+
+# Update the website_route_rules if not already present
+website_route_rules = [
+    {"from_route": "/lms/<path:app_path>", "to_route": "lms"},
+    {"from_route": "/lms/leaderboard", "to_route": "lms_leaderboard"},
 ]
