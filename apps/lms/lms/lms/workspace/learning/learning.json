@@ -1,0 +1,74 @@
+{
+    "cards": [
+        {
+            "hidden": 0,
+            "label": "Learning",
+            "links": [
+                {
+                    "dependencies": "",
+                    "description": "Course Management",
+                    "icon": "education",
+                    "label": "Courses",
+                    "name": "Course",
+                    "type": "doctype"
+                },
+                {
+                    "dependencies": "",
+                    "description": "View Leaderboard",
+                    "icon": "trending-up",
+                    "label": "Leaderboard",
+                    "name": "lms_leaderboard",
+                    "type": "page"
+                },
+                {
+                    "dependencies": "",
+                    "description": "View Statistics",
+                    "icon": "graph-bar",
+                    "label": "Statistics",
+                    "name": "statistics",
+                    "type": "page"
+                }
+            ]
+        }
+    ],
+    "charts": [],
+    "created_by": "Administrator",
+    "creation": "2024-02-01 10:00:00.000000",
+    "developer_mode_only": 0,
+    "disable_user_customization": 0,
+    "docstatus": 0,
+    "doctype": "Workspace",
+    "extends": "Learning",
+    "extends_another_page": 0,
+    "hide_custom": 0,
+    "icon": "education",
+    "idx": 0,
+    "is_default": 0,
+    "is_standard": 1,
+    "label": "Learning",
+    "links": [],
+    "modified_by": "Administrator",
+    "module": "LMS",
+    "name": "Learning",
+    "owner": "Administrator",
+    "parent_page": "",
+    "pin_to_bottom": 0,
+    "pin_to_top": 0,
+    "shortcuts": [
+        {
+            "color": "Grey",
+            "format": "{} Published",
+            "label": "Course",
+            "link_to": "Course",
+            "stats_filter": "[]",
+            "type": "DocType"
+        },
+        {
+            "color": "Blue",
+            "format": "",
+            "label": "Leaderboard",
+            "link_to": "lms_leaderboard",
+            "type": "Page"
+        }
+    ]
+} 
