@@ -33,12 +33,6 @@ web_include_js = [
     "website.bundle.js",
     "/assets/lms/js/lms_leaderboard.js"
 ]
-
-web_include_css = [
-    "lms.bundle.css",
-    "/assets/lms/css/lms_leaderboard.css"
-]
-
 website_route_rules = [
     {"from_route": "/lms/<path:app_path>", "to_route": "lms"},
     {"from_route": "/lms/leaderboard", "to_route": "lms_leaderboard"},
