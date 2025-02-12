@@ -29,9 +29,13 @@ app_include_css = [
 # include js, css files in header of web template
 web_include_css = "lms.bundle.css"
 # web_include_css = "/assets/lms/css/lms.css"
-web_include_js = ["website.bundle.js"]
+web_include_js = [
+    "website.bundle.js",
+    "/assets/lms/js/lms_leaderboard.js"
+]
 website_route_rules = [
-    {"from_route": "/lms_leaderboard", "to_route": "lms_leaderboard"},
+    {"from_route": "/lms/<path:app_path>", "to_route": "lms"},
+    {"from_route": "/lms/leaderboard", "to_route": "lms_leaderboard"},
 ]
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "lms/public/scss/website"
@@ -186,6 +190,7 @@ website_redirects = [
 		"match_with_query_string": True,
 	},
 	{"source": "/statistics", "target": "/lms/statistics"},
+	{"source": "/leaderboard", "target": "/lms/leaderboard"},
 ]
 
 update_website_context = [

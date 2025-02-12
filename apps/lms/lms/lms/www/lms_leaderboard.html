@@ -1,0 +1,51 @@
+{% extends "templates/lms_base.html" %}
+
+{% block title %}{{ _("LMS Leaderboard") }}{% endblock %}
+
+{% block head_include %}
+<link rel="stylesheet" href="/assets/lms/css/lms_leaderboard.css">
+{% endblock %}
+
+{% block content %}
+<div class="lms-content">
+    <div class="lms-content-main">
+        <div class="stats-header">
+            <h1>{{ _("Leaderboard") }}</h1>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-cards">
+            <div class="stat-card">
+                <div class="stat-value">{{ stats.courses }}</div>
+                <div class="stat-label">{{ _("Courses") }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">{{ stats.signups }}</div>
+                <div class="stat-label">{{ _("Signups") }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">{{ stats.enrollments }}</div>
+                <div class="stat-label">{{ _("Enrollments") }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">{{ stats.completions }}</div>
+                <div class="stat-label">{{ _("Completions") }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">{{ stats.milestones }}</div>
+                <div class="stat-label">{{ _("Milestones") }}</div>
+            </div>
+        </div>
+
+        <!-- Leaderboard Content -->
+        <div class="leaderboard-content">
+            <div class="leaderboard-graph"></div>
+            <div class="leaderboard-list"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="/assets/lms/js/lms_leaderboard.js"></script>
+{% endblock %} 
