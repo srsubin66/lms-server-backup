@@ -265,3 +265,18 @@ add_to_apps_screen = [
 		"has_permission": "lms.lms.api.check_app_permission",
 	}
 ]
+
+# Add this to include leaderboard in the sidebar
+app_include_sidebar_items = [
+	{
+		"module": "LMS",
+		"items": [
+			{
+				"label": "Leaderboard",
+				"route": "/lms/leaderboard",
+				"icon": "graph-up",  # or any other icon you prefer
+				"type": "link"
+			}
+		]
+	}
+]
