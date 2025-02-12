@@ -1,12 +1,8 @@
-{% extends "templates/lms_base.html" %}
+{% extends "templates/web.html" %}
 
 {% block title %}{{ _("LMS Leaderboard") }}{% endblock %}
 
-{% block head_include %}
-<link rel="stylesheet" href="/assets/lms/css/leaderboard.css">
-{% endblock %}
-
-{% block content %}
+{% block page_content %}
 <div class="lms-content">
     <div class="lms-content-main">
         <div class="stats-header">
@@ -44,6 +40,42 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block style %}
+<style>
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.stat-label {
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+.leaderboard-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+</style>
 {% endblock %}
 
 {% block script %}

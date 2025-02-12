@@ -174,7 +174,7 @@ website_redirects = [
 	{"source": "/update-profile", "target": "/edit-profile"},
 	{"source": "/courses", "target": "/lms/courses"},
 	{
-		"source": r"^/courses/.*$",
+		"source": r"/courses/.*$",
 		"target": "/lms/courses",
 	},
 	{"source": "/batches", "target": "/lms/batches"},

@@ -7,7 +7,14 @@ def get_context(context):
     context.no_cache = 1
     context.show_sidebar = True
     
-    # Add navigation context similar to statistics
+    # Add page title and breadcrumbs
+    context.title = _("LMS Leaderboard")
+    context.parents = [
+        {"name": _("Home"), "route": "/"},
+        {"name": _("LMS"), "route": "/lms"}
+    ]
+    
+    # Add navigation context
     context.navigation_links = [
         {"name": _("Courses"), "route": "/lms/courses"},
         {"name": _("Batches"), "route": "/lms/batches"},
@@ -17,14 +24,24 @@ def get_context(context):
         {"name": _("Leaderboard"), "route": "/lms/leaderboard", "active": True},
     ]
     
-    # Add statistics data
-    context.stats = {
-        "courses": frappe.db.count("LMS Course"),
-        "signups": frappe.db.count("User", {"enabled": 1}),
-        "enrollments": frappe.db.count("LMS Enrollment"),
-        "completions": frappe.db.count("LMS Enrollment", {"progress": 100}),
-        "milestones": frappe.db.count("LMS Course Progress")
-    }
+    try:
+        # Add statistics data with error handling
+        context.stats = {
+            "courses": frappe.db.count("LMS Course") or 0,
+            "signups": frappe.db.count("User", {"enabled": 1}) or 0,
+            "enrollments": frappe.db.count("LMS Enrollment") or 0,
+            "completions": frappe.db.count("LMS Enrollment", {"progress": 100}) or 0,
+            "milestones": frappe.db.count("LMS Course Progress") or 0
+        }
+    except Exception as e:
+        frappe.log_error(f"Error fetching leaderboard stats: {str(e)}")
+        context.stats = {
+            "courses": 0,
+            "signups": 0,
+            "enrollments": 0,
+            "completions": 0,
+            "milestones": 0
+        }
     
     return context
 
