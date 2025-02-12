@@ -84,41 +84,78 @@ class CourseLesson(Document):
 
 
 @frappe.whitelist()
-def save_progress(lesson, course):
-	membership = frappe.db.exists(
-		"LMS Enrollment", {"course": course, "member": frappe.session.user}
+def save_progress(lesson_name, course):
+	"""Save progress when a lesson is viewed"""
+	user = frappe.session.user
+	if not user or user == "Guest":
+		return
+
+	# Get lesson details
+	lesson = frappe.get_doc("Course Lesson", lesson_name)
+	
+	# Check if progress record exists
+	progress = frappe.db.get_value(
+		"LMS Course Progress",
+		{"lesson": lesson_name, "course": course, "owner": user},
+		"name"
 	)
-	if not membership:
-		return 0
 
-	frappe.db.set_value("LMS Enrollment", membership, "current_lesson", lesson)
-	already_completed = frappe.db.exists(
-		"LMS Course Progress", {"lesson": lesson, "member": frappe.session.user}
+	if progress:
+		# Update existing progress
+		progress_doc = frappe.get_doc("LMS Course Progress", progress)
+		progress_doc.status = "Completed"
+		progress_doc.save(ignore_permissions=True)
+	else:
+		# Create new progress record
+		progress_doc = frappe.get_doc({
+			"doctype": "LMS Course Progress",
+			"lesson": lesson_name,
+			"course": course,
+			"status": "Completed"
+		})
+		progress_doc.insert(ignore_permissions=True)
+
+	# Update course enrollment progress
+	update_course_progress(course, user)
+
+def update_course_progress(course, user):
+	"""Update overall course progress"""
+	total_lessons = frappe.db.count(
+		"Course Lesson",
+		{"course": course}
+	)
+	
+	completed_lessons = frappe.db.count(
+		"LMS Course Progress",
+		{
+			"course": course,
+			"owner": user,
+			"status": "Completed"
+		}
+	)
+	
+	if total_lessons:
+		progress = (completed_lessons / total_lessons) * 100
+	else:
+		progress = 0
+
+	# Update enrollment progress
+	enrollment = frappe.get_all(
+		"LMS Enrollment",
+		filters={
+			"course": course,
+			"member": user
+		},
+		limit=1
 	)
 
-	quiz_completed = get_quiz_progress(lesson)
-	assignment_completed = get_assignment_progress(lesson)
-
-	if not already_completed and quiz_completed and assignment_completed:
-		frappe.get_doc(
-			{
-				"doctype": "LMS Course Progress",
-				"lesson": lesson,
-				"status": "Complete",
-				"member": frappe.session.user,
-			}
-		).save(ignore_permissions=True)
-
-	progress = get_course_progress(course)
-	capture_progress_for_analytics(progress, course)
-
-	# Had to get doc, as on_change doesn't trigger when you use set_value. The trigger is necesary for badge to get assigned.
-	enrollment = frappe.get_doc("LMS Enrollment", membership)
-	enrollment.progress = progress
-	enrollment.save()
-	enrollment.run_method("on_change")
-
-	return progress
+	if enrollment:
+		frappe.db.set_value(
+			"LMS Enrollment",
+			enrollment[0].name,
+			"progress",
+			progress
+		)
 
 
 def capture_progress_for_analytics(progress, course):

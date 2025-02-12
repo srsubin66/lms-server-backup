@@ -1,0 +1,28 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="lesson-content">
+    {{ content }}
+</div>
+
+<script>
+frappe.ready(function() {
+    // Mark lesson as viewed after 10 seconds
+    setTimeout(function() {
+        frappe.call({
+            method: "lms.lms.doctype.course_lesson.course_lesson.save_progress",
+            args: {
+                lesson_name: "{{ lesson.name }}",
+                course: "{{ course.name }}"
+            },
+            callback: function(r) {
+                // Refresh progress indicators
+                if(window.updateProgress) {
+                    window.updateProgress();
+                }
+            }
+        });
+    }, 10000);
+});
+</script>
+{% endblock %} 
