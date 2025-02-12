@@ -84,41 +84,65 @@ class CourseLesson(Document):
 
 
 @frappe.whitelist()
-def save_progress(lesson, course):
-	membership = frappe.db.exists(
-		"LMS Enrollment", {"course": course, "member": frappe.session.user}
+def save_progress(lesson_name, course):
+	"""Save progress when user views a lesson"""
+	if not frappe.session.user:
+		return
+		
+	# Get enrollment for current user
+	enrollment = frappe.get_value(
+		"LMS Enrollment",
+		{
+			"course": course,
+			"member": frappe.session.user,
+			"member_type": "Student"
+		}
 	)
-	if not membership:
-		return 0
-
-	frappe.db.set_value("LMS Enrollment", membership, "current_lesson", lesson)
-	already_completed = frappe.db.exists(
-		"LMS Course Progress", {"lesson": lesson, "member": frappe.session.user}
+		
+	if not enrollment:
+		return
+		
+	# Check if progress already exists
+	progress = frappe.db.get_value(
+		"Course Progress",
+		{
+			"lesson": lesson_name,
+			"enrollment": enrollment
+		}
 	)
-
-	quiz_completed = get_quiz_progress(lesson)
-	assignment_completed = get_assignment_progress(lesson)
-
-	if not already_completed and quiz_completed and assignment_completed:
-		frappe.get_doc(
-			{
-				"doctype": "LMS Course Progress",
-				"lesson": lesson,
-				"status": "Complete",
-				"member": frappe.session.user,
-			}
-		).save(ignore_permissions=True)
-
-	progress = get_course_progress(course)
-	capture_progress_for_analytics(progress, course)
-
-	# Had to get doc, as on_change doesn't trigger when you use set_value. The trigger is necesary for badge to get assigned.
-	enrollment = frappe.get_doc("LMS Enrollment", membership)
-	enrollment.progress = progress
-	enrollment.save()
-	enrollment.run_method("on_change")
-
-	return progress
+		
+	if not progress:
+		# Create new progress entry
+		progress = frappe.get_doc({
+			"doctype": "Course Progress",
+			"enrollment": enrollment,
+			"lesson": lesson_name,
+			"status": "Complete"
+		})
+		progress.insert(ignore_permissions=True)
+	
+	# Update enrollment progress percentage
+	total_lessons = frappe.db.count(
+		"Course Lesson",
+		{"course": course}
+	)
+		
+	completed_lessons = frappe.db.count(
+		"Course Progress",
+		{
+			"enrollment": enrollment,
+			"status": "Complete"
+		}
+	)
+		
+	if total_lessons:
+		progress_percent = (completed_lessons / total_lessons) * 100
+		frappe.db.set_value(
+			"LMS Enrollment",
+			enrollment,
+			"progress",
+			progress_percent
+		)
 
 
 def capture_progress_for_analytics(progress, course):
