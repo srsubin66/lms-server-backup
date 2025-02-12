@@ -1,4 +1,5 @@
 from . import __version__ as app_version
+from frappe import _
 
 app_name = "frappe_lms"
 app_title = "Frappe LMS"
@@ -29,9 +30,13 @@ app_include_css = [
 # include js, css files in header of web template
 web_include_css = "lms.bundle.css"
 # web_include_css = "/assets/lms/css/lms.css"
-web_include_js = ["website.bundle.js"]
+web_include_js = [
+    "website.bundle.js",
+    "/assets/lms/js/lms_leaderboard.js"
+]
 website_route_rules = [
-    {"from_route": "/lms_leaderboard", "to_route": "lms_leaderboard"},
+    {"from_route": "/lms/<path:app_path>", "to_route": "lms"},
+    {"from_route": "/lms/leaderboard", "to_route": "lms_leaderboard"},
 ]
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "lms/public/scss/website"
@@ -170,7 +175,7 @@ website_redirects = [
 	{"source": "/update-profile", "target": "/edit-profile"},
 	{"source": "/courses", "target": "/lms/courses"},
 	{
-		"source": r"^/courses/.*$",
+		"source": r"/courses/.*$",
 		"target": "/lms/courses",
 	},
 	{"source": "/batches", "target": "/lms/batches"},
@@ -186,6 +191,7 @@ website_redirects = [
 		"match_with_query_string": True,
 	},
 	{"source": "/statistics", "target": "/lms/statistics"},
+	{"source": "/leaderboard", "target": "/lms/leaderboard"},
 ]
 
 update_website_context = [
@@ -259,4 +265,39 @@ add_to_apps_screen = [
 		"route": "/lms",
 		"has_permission": "lms.lms.api.check_app_permission",
 	}
+]
+
+# Add this to include leaderboard in the sidebar
+app_include_sidebar_items = [
+	{
+		"module": "LMS",
+		"items": [
+			{
+				"label": "Leaderboard",
+				"route": "/lms/leaderboard",
+				"icon": "graph-up",  # or any other icon you prefer
+				"type": "link"
+			}
+		]
+	}
+]
+
+# Add these configurations
+workspace_sidebar_items = {
+    "Learning": [
+        {
+            "label": _("Learning"),
+            "items": [
+                {"type": "doctype", "name": "Course", "label": _("Courses")},
+                {"type": "page", "name": "lms_leaderboard", "label": _("Leaderboard")},
+                {"type": "page", "name": "statistics", "label": _("Statistics")}
+            ]
+        }
+    ]
+}
+
+# Update the website_route_rules if not already present
+website_route_rules = [
+    {"from_route": "/lms/<path:app_path>", "to_route": "lms"},
+    {"from_route": "/lms/leaderboard", "to_route": "lms_leaderboard"},
 ]
