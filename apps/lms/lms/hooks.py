@@ -9,7 +9,7 @@ app_icon_url = "/assets/lms/images/lms-logo.png"
 app_icon_title = "Learning"
 app_icon_route = "/lms"
 app_color = "grey"
-app_email = "hello@subin.in"
+app_email = "hi@subin.in"
 app_license = "AGPL"
 
 # Includes in <head>
