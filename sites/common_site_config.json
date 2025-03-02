@@ -3,6 +3,7 @@
  "db_host": "mariadb",
  "default_site": "lms.localhost",
  "developer_mode": true,
+ "enable_oauth": true,
  "file_watcher_port": 6787,
  "frappe_user": "frappe",
  "gunicorn_workers": 5,
